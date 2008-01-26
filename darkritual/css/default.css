@@ -1,0 +1,321 @@
+/*#############################################################
+Name: Dark Ritual
+Date: 2006-11-06
+Description: Tribal-style three column layout.
+Author: Viktor Persson
+URL: http://templates.arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+
+/* standard elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {color: #682;}
+
+a:hover {color: #9A6;}
+
+body {
+	background: #333 url(../img/bg.gif);
+	color: #333;
+	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+	margin: 3% 0;
+}
+
+body#tinymce {
+  background-color: #f7f7f7 !important;
+  background-image: none !important;
+  color: #111111;
+}
+
+p,ul {
+	padding-bottom: 1em;
+}
+
+ul {margin-left: 1.2em;}
+
+li {list-style: none;}
+.main li, body#tinymce li {list-style-image: url(../img/li.gif);}
+
+h1 {font-size: 1.2em;}
+
+blockquote {
+	background: #FFF;
+	border-bottom: 1px solid #EEE;
+	border-top: 1px solid #EEE;
+	color: #333;
+	display: block;
+	font-size: 0.9em;
+	margin-bottom: 1.2em;
+	padding: 6px 12px;
+}
+blockquote p {padding: 3px 0;}
+
+h1,h2,h3 {color: #994;}
+
+/* misc */
+.clearer {clear: both;}
+.main_right .padded {padding: 6px 2px 6px 16px;}
+.main .padded {padding: 18px 24px;}
+.meta {font-size: 0.8em; color: #666;}
+.left {float: left;}
+.right {float: right;}
+
+/* structure */
+.container {
+	font-size: 1.2em;
+	background: url(../img/bgcontainer.gif) repeat-y;
+	margin: 0 auto;
+	width: 840px;
+	border: 12px solid #222;
+}
+
+/* Adaptation for "simple" (limited elements) view */
+.container-simple {
+  width: 640px;
+  background-position: -160px 0;
+  margin-top: 100px;
+}
+
+/* header */
+.header {
+	float: left;
+	width: 640px;
+	background: url(../img/header.jpg) no-repeat;
+	font: normal 2.4em Verdana,sans-serif;
+	line-height: 150px;
+	text-align: center;	
+}
+
+.container-simple .header {
+  line-height: 3em;
+  background-position: center center;
+  border-bottom: 1px solid #111111;
+}
+
+/* structure */
+.top {
+	background: #222;
+	color: #DDD;
+	float: left;
+	font: normal 1.4em Verdana;
+	height: 50px;
+	text-align: center;
+	width: 639px;
+}
+.subnav {
+	float: left;
+	width: 160px;
+  color: #f7f7f7;
+}
+.subnav div.subnav_raw {
+  margin-left: 8px;
+}
+#subnav_left {
+  clear: left;
+  margin-top: 10px;
+}
+.main {
+	float: left;
+	width: 480px;
+}
+.main_right {
+	float: right;
+	width: 200px;
+	color: #CCC;
+}
+
+/* sub-navigation */
+.subnav h1 {
+	background: #222;
+	color: #FFE;
+	font: bold 1.1em Verdana,sans-serif;
+	line-height: 24px;
+	padding-left: 8px;
+}
+.subnav ul {margin: 0; padding: 0;}
+.subnav li {
+	border-bottom: 1px solid #696755;
+	list-style: none;
+}
+.subnav li a {
+	background: #89866F;	
+	color: #111;
+	display: block;
+	padding: 8px 0 8px 12px;
+	width: 148px;
+	text-decoration: none;
+}
+.subnav li a:hover {
+	background: #9C997C;
+	color: #000;
+}
+
+/* footer */
+.footer {
+	background: url(../img/bgfooter.gif) repeat-x;
+	color: #CCC;
+	font-size: 0.9em;
+	line-height: 39px;
+	width: 100%;
+	text-align: center;
+}
+.footer .left,.footer .right {padding: 0 16px;}
+.footer a {color: #EEE;}
+.footer a:hover {color: #FAFCB0;}
+
+fieldset {
+  padding: 1em;
+}
+
+/*
+ * ENANO STUFF
+ */
+
+/*
+ * jBox menu system
+ */
+
+div.menu, div.menu_nojs {
+  background-color: #333333;
+  font-size: 7pt;
+  border-width: 0;
+}
+/* This is Dark Ritual-specific */
+div.menu#pagebar_main, div.menu_nojs#pagebar_main {
+  float: left;
+  width: 639px;
+}
+/* So is this */
+div.menu#pagebar_main span.menuclear, div.menu_nojs#pagebar_main span.menuclear {
+}
+
+.menu_bg {
+  background-color: #222222;
+}
+div.menu a, div.menu div.label {
+  padding: 2.5pt 5px;
+  margin-right: 3px;
+  text-decoration: none;
+  display: block;
+  float: left;
+  color: #111111;
+}
+div.menu_nojs a, div.menu_nojs div.label {
+  padding: 2.5pt 5px;
+  margin-right: 3px;
+  text-decoration: none;
+  display: block;
+  float: left;
+  color: #c6c6c6;
+}
+div.menu div.label, div.menu_nojs div.label {
+  color: #a0a0a0;
+  cursor: default;
+}
+/* Buttons/labels on pop-down menus */
+div.menu_nojs ul li a, div.menu ul li a, div.menu_nojs ul div.label, div.menu ul div.label {
+  color: #111111;
+}
+div.menu_nojs ul div.label, div.menu ul div.label {
+  font-weight: bold;
+}
+div.menu span.sep, div.menu_nojs span.sep {
+  display: block;
+  float: left;
+  width: 5px;
+}
+div.menu div.multopts, div.menu_nojs div.multopts {
+  line-height: 17pt;
+}
+div.menu div.multopts a, div.menu div.multopts div.label, div.menu_nojs div.multopts a, div.menu_nojs div.multopts div.label {
+  float: none;
+  display: inline;
+}
+div.menu a.liteselected, div.menu a.liteselected:hover, div.menu a:hover, div.menu_nojs a.liteselected, div.menu_nojs a.liteselected:hover, div.menu_nojs a:hover {
+  color: #f7f7f7;
+  background-color: #555555;
+}
+div.menu input[type ^="text"], div.menu input[type ^="password"], div.menu_nojs input[type ^="text"], div.menu_nojs input[type ^="password"] {
+  border-width: 0;
+  font-size: 9pt;
+  padding: 2px 5px 3px 5px;
+  max-width: 70px;
+  background-color: #aaa787;
+}
+div.menu input[type ^="text"]:hover, div.menu input[type ^="password"]:hover, div.menu_nojs input[type ^="text"]:hover, div.menu_nojs input[type ^="password"]:hover {
+  background-color: #b5b290;
+}
+div.menu input[type ^="text"]:focus, div.menu input[type ^="password"]:focus, div.menu_nojs input[type ^="text"]:focus, div.menu_nojs input[type ^="password"]:focus {
+  background-color: #c1bd99;
+}
+div.menu input[type ^="button"], div.menu input[type ^="submit"], div.menu_nojs input[type ^="button"], div.menu_nojs input[type ^="submit"] {
+  border-width: 0;
+  font-size: 9pt;
+  padding: 3px 5px;
+  max-width: 70px;
+}
+div.menu a.current, div.menu a.current:hover, div.menu a.selected, div.menu a.selected:hover, div.menu_nojs a.current, div.menu_nojs a.current:hover, div.menu_nojs a.selected, div.menu_nojs a.selected:hover {
+  color: #111111;
+  background-color: #9C997C;
+}
+div.menu ul, div.menu_nojs ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0 !important;
+  background-color: #9f9c7e;
+  border-width: 0;
+  min-width: 120px;
+}
+div.menu ul li, div.menu_nojs ul li {
+  list-style: none;
+}
+div.menu ul a, div.menu_nojs ul a {
+  float: none;
+  margin: 0;
+}
+span.menuclear {
+  font-size: 1px;
+  height: 0px;
+  width: 0px;
+  clear: left;
+  line-height: 0px;
+  display: block;
+}
+
+#h1_page_name {
+  border-bottom: 1px solid #111111;
+  margin-bottom: 10px;
+}
+
+/* Enano's tables */
+
+.tblholder                        { margin: 10px 0 0 0; padding: 0; border: 1px solid #AAAAAA; background-color: #E8E8E8; }
+
+/* The beautiful tables inside what may not obviously be mdg-comment divs */
+div.tblholder td.row1             { padding: 4px; background-color: #E0E0E0; }
+div.tblholder td.row2             { padding: 4px; background-color: #F0F0F0; }
+div.tblholder td.row3             { padding: 4px; background-color: #E8E8E8; }
+div.tblholder th                  { padding: 4px; background-color: #696755; font-weight: bold; text-align: center; color: #FFFFFF; }
+div.tblholder th.subhead          { padding: 4px; background-color: #84816b; font-weight: bold; text-align: center; color: #FFFFFF; }
+div.tblholder table               { background-color: #FFFFFF; width: 100%; }
+
+/* Changes for tables embedded in the sidebars */
+.subnav .tblholder, .main_right .tblholder                       { margin: 10px 0 0 0; padding: 0; border: 1px solid #AAAAAA; background-color: #111111; }
+.subnav div.tblholder table,   .main_right div.tblholder table   { background-color: #888888; width: 100%; }
+.subnav div.tblholder td.row1, .main_right div.tblholder td.row1 { padding: 4px; background-color: #333333; }
+.subnav div.tblholder td.row2, .main_right div.tblholder td.row2 { padding: 4px; background-color: #444444; }
+.subnav div.tblholder td.row3, .main_right div.tblholder td.row3 { padding: 4px; background-color: #3B3B3B; }
+
+/* Colored table cells */
+div.tblholder td.row1_red         { padding: 4px; background-color: #F8E0E0; }
+div.tblholder td.row2_red         { padding: 4px; background-color: #FFF0F0; }
+div.tblholder td.row3_red         { padding: 4px; background-color: #FFE8E8; }
+div.tblholder td.row1_green       { padding: 4px; background-color: #E0F8E0; }
+div.tblholder td.row2_green       { padding: 4px; background-color: #F0FFF0; }
+div.tblholder td.row3_green       { padding: 4px; background-color: #E8FFE8; }
+
