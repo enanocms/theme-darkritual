@@ -1,22 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
-<meta name="description" content="{SITE_DESC}"/>
-<link rel="stylesheet" type="text/css" href="{SCRIPTPATH}/includes/clientside/css/enano-shared.css" />
-<link rel="stylesheet" type="text/css" id="mdgCss" href="{SCRIPTPATH}/themes/{THEME_ID}/css/{STYLE_ID}.css" media="screen" />
-<title>{PAGE_NAME} | {SITE_NAME}</title>
-
-{JS_DYNAMIC_VARS}
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <meta name="description" content="{SITE_DESC}"/>
+    <link rel="stylesheet" type="text/css" href="{SCRIPTPATH}/includes/clientside/css/enano-shared.css" />
+    <link rel="stylesheet" type="text/css" id="mdgCss" href="{SCRIPTPATH}/themes/{THEME_ID}/css/{STYLE_ID}.css" media="screen" />
+    <title>{PAGE_NAME} | {SITE_NAME}</title>
     
-<!-- This script automatically loads the other 15 JS files -->
-<script type="text/javascript" src="{SCRIPTPATH}/includes/clientside/static/enano-lib-basic.js"></script>
-{ADDITIONAL_HEADERS}
+    {JS_DYNAMIC_VARS}
+    
+    <!-- Enable the Office2007 skin in TinyMCE -->
+    <script type="text/javascript">
+    var tinymce_skin = 'o2k7';
+    </script>
+    
+    <!-- This script automatically loads the other 15 JS files -->
+    <script type="text/javascript" src="{SCRIPTPATH}/includes/clientside/static/enano-lib-basic.js"></script>
+    {ADDITIONAL_HEADERS}
+    
+    <!-- Enable the modal page editor -->
+    <script type="text/javascript">
+    editor_use_modal_window = true;
+    tinymce_skin = 'o2k7';
+    </script>
+  
+  </head>
 
-</head>
-
-<body>
+  <body>
 
 <div class="container">
 

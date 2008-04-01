@@ -18,7 +18,9 @@
 <!-- ENDVAR sidebar_top -->
 <!-- VAR sidebar_section -->
             <h1>{TITLE}</h1>
-            {CONTENT}
+            <ul>
+              {CONTENT}
+            </ul>
 <!-- ENDVAR sidebar_section -->
 <!-- VAR sidebar_section_raw -->
             <h1>{TITLE}</h1>
