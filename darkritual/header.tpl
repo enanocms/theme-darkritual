@@ -16,7 +16,7 @@
     </script>
     
     <!-- This script automatically loads the other 15 JS files -->
-    <script type="text/javascript" src="{SCRIPTPATH}/includes/clientside/static/enano-lib-basic.js"></script>
+    <script type="text/javascript" src="{SCRIPTPATH}/includes/clientside/jsres.php"></script>
     {ADDITIONAL_HEADERS}
     
     <!-- Enable the modal page editor -->
