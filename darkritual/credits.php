@@ -21,7 +21,7 @@ $template->header();
 <p>This theme is Free and licensed under the Creative Commons <a onclick="window.open(this.href); return false;" href="http://creativecommons.org/licenses/by/2.5/">Attribution 2.5</a>
    license. This means that you can use the theme for any purpose (including commercial applications) provided that this page and any
    appropriate copyright notices in the source code are preserved.</p>
-<p>Ported to the Enano Platform by <a onclick="window.open(this.href); return false;" href="http://lifecodeidiocy.enanocms.org/">Dan Fuhry</a>.</p>
+<p>Ported to the Enano Platform by <a onclick="window.open(this.href); return false;" href="http://fuhry.co.cc/">Dan Fuhry</a>.</p>
 
 <p style="text-align: center;">
   <a href="http://creativecommons.org/licenses/by/2.5/" onclick="window.open(this.href); return false;">
