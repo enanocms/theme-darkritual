@@ -15,16 +15,9 @@
     var tinymce_skin = 'o2k7';
     </script>
     
-    <!-- This script automatically loads the other 15 JS files -->
-    <script type="text/javascript" src="{SCRIPTPATH}/includes/clientside/jsres.php"></script>
+    {JS_HEADER}
     {ADDITIONAL_HEADERS}
     
-    <!-- Enable the modal page editor -->
-    <script type="text/javascript">
-    editor_use_modal_window = true;
-    tinymce_skin = 'o2k7';
-    </script>
-  
   </head>
 
   <body>

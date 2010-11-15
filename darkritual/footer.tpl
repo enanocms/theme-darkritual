@@ -24,6 +24,14 @@
 
 </div>
 
+{JS_FOOTER}
+
+<!-- Enable the modal page editor -->
+<script type="text/javascript">
+    editor_use_modal_window = true;
+    tinymce_skin = 'o2k7';
+</script>
+
 </body>
 
 </html>
